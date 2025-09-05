@@ -19,8 +19,7 @@
                     "ignoreFailures": true
                 }
             ],
-            // This is the important line to fix the error.
-            // It specifies the path to the GDB debugger.
+            
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
