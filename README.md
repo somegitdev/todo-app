@@ -1,0 +1,3 @@
+# Simple C++ console to-do app
+
+A basic command-line to-do application built with C++ and yeah...

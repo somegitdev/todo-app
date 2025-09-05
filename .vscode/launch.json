@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch todo_app",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/todo_app",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // This is the important line to fix the error.
+            // It specifies the path to the GDB debugger.
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
